@@ -1,0 +1,45 @@
+<div class="parent">
+    <div>
+        <h1>welcome {{user}}</h1>
+        <a routerLink="/transaction">Transaction hystory</a>
+    </div>
+    <div class="child">
+        <div class="container">
+            
+            <div class="reg " >
+                 <div class="icon"><img src="./../../assets/images/bank-building-online-banking-finance-bank-transactions-bank-service-3d-vector-icon-cartoon-minimal-style_365941-689.webp" alt=""></div> 
+               <div> <h1 class="h1 mt-5">Deposit</h1></div>
+               <div> <input [(ngModel)]="acno" type="text" placeholder="Account Number" class="mt-3" id="depo_acno"></div>
+               <div> <input [(ngModel)]="pswd" type="password" placeholder="Password" class="mt-3" id="depo_pswd" ></div>
+               <div> <input [(ngModel)]="amount" type="text" placeholder="deposit" class="mt-3 " id="depo_amount"> </div>
+
+               <div> <button class="btn btn-primary mt-3" (click)="deposit()"> deposit</button></div>
+               <!-- <div> <a href="#">forget Password?</a> or <a href="#">Sign up</a></div> -->
+            
+        </div>
+        </div>
+        
+        
+    </div>
+
+
+
+    <div class="child">
+        <div class="container">
+            
+            <div class="reg " >
+                 <div class="icon"><img src="./../../assets/images/bank-building-online-banking-finance-bank-transactions-bank-service-3d-vector-icon-cartoon-minimal-style_365941-689.webp" alt=""></div> 
+               <div> <h1 class="h1 mt-5">withdraw</h1></div>
+               <div> <input [(ngModel)]="acno1" type="text" placeholder="Account Number" class="mt-3" id="with_acno"></div>
+               <div> <input [(ngModel)]="pswd1" type="password" placeholder="Password" class="mt-3" id="with_pswd" ></div>
+               <div> <input [(ngModel)]="amount1" type="text" placeholder="withdraw" class="mt-3 " id="with_amount"> </div>
+
+               <div> <button class="btn btn-primary mt-3" (click)="withdraw()"> withdraw</button></div>
+               <!-- <div> <a href="#">forget Password?</a> or <a href="#">Sign up</a></div> -->
+            
+        </div>
+        </div>
+
+    </div>
+
+</div>

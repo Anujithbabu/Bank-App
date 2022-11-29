@@ -1,53 +1,92 @@
-Basic Builing Blocks
-
-1)Module - To import 3rd party Modules(root module -app.module.ts)
-2)Component - To create html,css,and ts files
-
-----Basic comamands----
-
-1)To create new project -ng new project_name
-2)To crate new component -ng g c component_name
-3)To run Angular files -ng serve --open
+###    ANGULAR
 
 
-Basic concepts
+Basic Building Blocks : 
 
-Data binding 
--Share data between components
+1) Modules : To import 3rd party modules (root module -app-module.ts)
+2) Component : Create HTML CSS TS files 
 
-ts->Component
-html->View
 
-1)One way data binding 
-  data sharing only one direction
-    1.1)Component to view(ts->html) 
+Basic Commands 
 
-        a)String Interpolation - {{expression}}
-        b)property binding - [attribute_name]="property" 
+1)To Create a new project  : ng new projectname
+2)To create a new Component : ng g c component Name 
+3)to run angular files : ng serve --open
 
-    1.2)View to components (html -> ts)
 
-        a)Event binding - (event_name)="function_name()"
-        b)Event Binding using $event-(event_name)="function_name($event)"
-        c)Event binding using template referencing variable - #variable_name
+basic Concepts : 
 
-2)Two way data binding 
-  Data sharing both direction (ts->html  html->ts)
+Data Binding 
+    Share Data between components
 
-    i)ngModel binding - import formsModule in app.module.ts
+    ts->Component
+    html->view
 
-    [(ngModel)]="property_name"
+    1) one way data Binding 
+    data Sharing only one direction (ts->html or html -> ts)
+    1.1)component to view (ts->html)
+    a)string interpolation - {{expression}}
+    b)property binding -[attribute_name]="property"
 
 
 
---Angular Routing--
+    1.2) view to component (html to ts)
 
-    To set path for component
-    {
-        path:value,component:component_name
-    },
+       a)Event Binding - (event_name)
+       b)Event binding using $(event) -(event_name)="function_name($event)"
+       c)Event Binding using template referencing variable - #variable_name
 
-    login
-    {
-        path:'',component:LoginComponen
-    },
+
+2) Two way data binding
+
+    Data sharing in both direction (ts-> html html->ts)
+        i)ngModel binding - import formsModule in app.module.ts
+
+        [(ngModel)]="property_name"
+
+
+Angular routing
+
+        to set path for component:
+        {
+            path:value,component:component-name
+        }
+
+
+
+        login
+        {
+            path:'',component:loginComponent
+        }
+
+
+
+    Angular services
+
+            to hold redunt data
+
+            to create new service -ng g s -service_name
+
+           4) Dependecy injection
+            To share data between two dependent classes
+
+            constructor(private ds :DataService)
+
+
+
+
+    5)Angular directives to manipulate DOM
+
+    a)component directives(array)
+    b)structural directives (table)
+
+    -> *ngFor
+
+
+    6) Angular Forms 
+        a)Template driven Forms
+        b)Model Driven Forms(First design model in ts file)
+            1)Reactive Forms
+            Formgroup ,array ,control
+            for advanced validation
+            import from reactive forms Module(in app.module.ts)

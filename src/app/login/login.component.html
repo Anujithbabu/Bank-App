@@ -4,8 +4,10 @@
     <div> <h1 class="h1 mt-5">My Bank</h1>
         <!-- string interpolation -->
     <h6>{{aim}}</h6></div>
-    <div> <input #acno type="text" [placeholder]="account" class="mt-3" id="login_acno"></div>
-    <div> <input #pswd type="password" placeholder="Password" class="mt-3" id="login_pswd" ></div>
-    <div> <button class="btn btn-primary mt-3" (click)="login(acno,pswd)"> Login</button></div>
+    <div> <input [(ngModel)]="acno" type="text" [placeholder]="account" class="mt-3" id="login_acno"></div>
+    <div> <input [(ngModel)]="pswd" type="password" placeholder="Password" class="mt-3" id="login_pswd" ></div>
+    <div> <button class="btn btn-primary mt-3" (click)="login()"> Login</button></div>
+    <div> <a href="#">forget Password?</a> or <a routerLink="register">Sign up</a></div>
+
     </div>
 </div>

@@ -89,10 +89,10 @@ button:hover{
     
 }
 button{
-    box-shadow:2px 2px 5px blue;
-    color: black;
-    background-color: blueviolet;
-}
+        box-shadow:2px 2px 5px rgb(33, 33, 56);
+        color: rgb(251, 245, 245);
+        background-color: rgb(8, 8, 8);
+    }
 input:hover{
     box-shadow:2px 2px 5px blue;
 }
